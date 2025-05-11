@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"> <!-- importacion de estilos generales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- importacion de font awesome para los iconos -->
+
+    <title>Admin Panel</title>
+</head>
+
+<body>
+    <header class="header"> <!-- header del panel de admin con foto de perfil del lado derecho -->
+        <div class="title">Panel de adminstracion</div>
+        <div class="perfil">
+            <div class="img">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" class="usuario"
+                    alt="">
+            </div>
+            <p>admin</p>
+        </div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button> <!-- boton oculto para mostrar el menu cuando sea telefonos movil -->
+    </header>
+    <div class="contenido"> <!-- div general de contenido -->
+        <div class="menu"  id="menu"> <!-- menu de la parte izquierda -->
+            <ul class="menu-lateral">
+                <li><a href="#dashboard" class="activo"><i class="fas fa-home"></i> Dashboard</a></li>
+                <li><a href="#usuarios"><i class="fas fa-users"></i> Usuarios</a></li>
+                <li><a href="#productos"><i class="fas fa-box-open"></i> Productos</a></li>
+                <li><a href="#perfil"><i class="fas fa-user"></i> Perfil</a></li>
+                <li><a href="#configuracion"><i class="fas fa-cog"></i> Config.</a></li>
+                <li><a href="#soporte"><i class="fas fa-question-circle"></i> Soporte</a></li>
+                <li><a href="#logout"><i class="fas fa-sign-out-alt"></i> Cerrar sesión</a></li>
+            </ul>
+        </div>
+        <div class="contenido-dashboard"> <!-- contenido del panel admin -->
+
+            <div class="estadisticas"> <!-- barra de estadisticas -->
+                <div class="item">
+                    <h5>usuarios totales</h5>
+                    <h2>5000</h2>
+                </div>
+                <div class="item">
+                    <h5>hombres totales</h5>
+                    <h2>2700</h2>
+                </div>
+                <div class="item">
+                    <h5>mujeres totales</h5>
+                    <h2>2200</h2>
+                </div>
+                <div class="item">
+                    <h5>tiempo promedio</h5>
+                    <h2>123.50</h2>
+                </div>
+                <div class="item2">
+                    <h5>conexiones totales</h5>
+                    <h2>10,000</h2>
+                </div>
+            </div>
+
+            <div class="estad-table">
+                <div class="datos"> <!-- tabla de usuarios  -->
+                    <h2>Principales usuarios</h2>
+
+                    <table class="tabla-usuarios">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                                <th>Edad</th>
+                                <th>departamento</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Carlos</td>
+                                <td>López</td>
+                                <td>45</td>
+                                <td>Finanzas</td>
+                                <td>Activo</td>
+                            </tr>
+                            <tr>
+                                <td>Andrea</td>
+                                <td>Hernández</td>
+                                <td>31</td>
+                                <td>Finanzas</td>
+                                <td>Inactivo</td>
+                            </tr>
+                            <tr>
+                                <td>Pedro</td>
+                                <td>Ramírez</td>
+                                <td>38</td>
+                                <td>Finanzas</td>
+                                <td>Activo</td>
+                            </tr>
+                            <tr>
+                                <td>Ana</td>
+                                <td>Torres</td>
+                                <td>27</td>
+                                <td>Finanzas</td>
+                                <td>Inactivo</td>
+                            </tr>
+                            <tr>
+                                <td>Diego</td>
+                                <td>Flores</td>
+                                <td>22</td>
+                                <td>Finanzas</td>
+                                <td>Activo</td>
+                            </tr>
+                            <tr>
+                                <td>Sofía</td>
+                                <td>Díaz</td>
+                                <td>29</td>
+                                <td>Finanzas</td>
+                                <td>Activo</td>
+                            </tr>
+                            <tr>
+                                <td>Martín</td>
+                                <td>Silva</td>
+                                <td>33</td>
+                                <td>Finanzas</td>
+                                <td>Activo</td>
+                            </tr>
+                            <tr>
+                                <td>Laura</td>
+                                <td>Cruz</td>
+                                <td>26</td>
+                                <td>Finanzas</td>
+                                <td>Inactivo</td>
+                            </tr>
+                            <tr>
+                                <td>José</td>
+                                <td>Morales</td>
+                                <td>40</td>
+                                <td>Finanzas</td>
+                                <td>Activo</td>
+                            </tr>
+                            <tr>
+                                <td>Camila</td>
+                                <td>Navarro</td>
+                                <td>24</td>
+                                <td>Finanzas</td>
+                                <td>Inactivo</td>
+                            </tr>
+                            <tr>
+                                <td>Hugo</td>
+                                <td>Vargas</td>
+                                <td>36</td>
+                                <td>Finanzas</td>
+                                <td>Activo</td>
+                            </tr>
+                            <tr>
+                                <td>Valeria</td>
+                                <td>Mendoza</td>
+                                <td>32</td>
+                                <td>Finanzas</td>
+                                <td>Activo</td>
+                            </tr>
+                            <tr>
+                                <td>Mario</td>
+                                <td>Soto</td>
+                                <td>39</td>
+                                <td>Finanzas</td>
+                                <td>Inactivo</td>
+                            </tr>
+
+                            <tr>
+                                <td>Hugo</td>
+                                <td>Vargas</td>
+                                <td>36</td>
+                                <td>Finanzas</td>
+                                <td>Activo</td>
+                            </tr>
+                            <tr>
+                                <td>Valeria</td>
+                                <td>Mendoza</td>
+                                <td>32</td>
+                                <td>Finanzas</td>
+                                <td>Activo</td>
+                            </tr>
+                            <tr>
+                                <td>Mario</td>
+                                <td>Soto</td>
+                                <td>39</td>
+                                <td>Finanzas</td>
+                                <td>Inactivo</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="grafica"> <!-- simulacion de grafica de pastel -->
+                    <h2>conexiones en el mes</h2>
+                    <div class="grafica-pastel"></div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+<script> //script que se ejecuta cuando se presiona el boton de mostrar menu
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.classList.toggle("mostrar");
+    }
+  </script>
+</html>
